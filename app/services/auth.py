@@ -1,6 +1,9 @@
 """JWT verification for Google and Apple id_tokens."""
 import os
 from datetime import datetime, timedelta
+from dotenv import load_dotenv
+
+load_dotenv()
 from google.oauth2 import id_token as google_id_token
 from google.auth.transport import requests as google_requests
 import jwt  # PyJWT

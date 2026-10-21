@@ -1,6 +1,9 @@
 """Cloudflare R2 — generate presigned audio URLs."""
 import os
 import boto3
+from dotenv import load_dotenv
+
+load_dotenv()
 from botocore.client import Config
 
 R2_ACCOUNT_ID   = os.environ["R2_ACCOUNT_ID"]
